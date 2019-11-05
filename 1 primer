@@ -1,0 +1,10 @@
+<?php 
+ echo "<table border = 1>";
+ function make_column();
+ {echo "<td>", "text", "</td>;}
+  function make_line()
+ {echo "<tr>";
+ for ($i=0, $i<100; $i++)
+ {echo make_line();}
+  echo </table>
+  ?>
