@@ -1,10 +1,14 @@
-<?php 
- echo "<table border = 1>";
- function make_column();
- {echo "<td>", "text", "</td>;}
-  function make_line()
- {echo "<tr>";
- for ($i=0, $i<100; $i++)
- {echo make_line();}
-  echo </table>
-  ?>
+<?php
+$rows = 100;
+$cols = 100;
+$table = '<table border="2">';
+for ($tr=1; $tr<=$rows; $tr++)
+{ $table .= '<tr>';
+for ($td=1; $td<=$cols; $td++)
+{ if ($tr===1 or $td===1)
+{ $table .= '<th text align="center">'. $tr*$td .'</th>'; }
+else{ $table .= '<td>'.'</td>'; } }
+$table .= '</tr>';}
+$table .= '</table>';
+echo $table;
+?>
